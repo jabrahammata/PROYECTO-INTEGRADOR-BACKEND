@@ -1,3 +1,4 @@
+const backendUrl = "http://localhost:8080/";
 const form = document.getElementById("agregarForm");
 
 form.addEventListener("submit", function (event) {
@@ -26,7 +27,7 @@ form.addEventListener("submit", function (event) {
     },
   };
 
-  fetch(`paciente/guardar`, {
+  fetch(`${backendUrl}paciente/guardar`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

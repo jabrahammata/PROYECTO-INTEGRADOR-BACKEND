@@ -76,7 +76,7 @@
         </div>
         <div class="mb-3">
           <label for="dni" class="form-label">DNI</label>
-          <input type="text" class="form-control" id="dni" required />
+          <input type="text" class="form-control" id="dni" required pattern="\d{7,15}" title="DNI must be between 7 and 15 digits" />
         </div>
         <div class="mb-3">
           <label for="fecha" class="form-label">Fecha de Ingreso:</label>
@@ -102,6 +102,8 @@
         <button type="submit" class="btn btn-primary">Agregar</button>
       </form>
     </div>
+    <!-- Add margin after the form container -->
+    <div class="mb-5"></div>
 
     <script src="js/agregarPacientes.js"></script>
   </body>
